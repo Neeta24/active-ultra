@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 import './Activity.css';
 const Activity = () => {
     const[products,setProducts] =useState([]);
@@ -11,7 +12,10 @@ const Activity = () => {
     return (
         <div className='activity-container'>
             <div className="excersize-container">
-                 <h1>this is for details</h1>
+                 {
+                    products.map(product=><Product key ={product.id}
+                    product ={product}></Product>)
+                 }
             </div>
             <div className="details-container">
               <h1>details about me</h1>
