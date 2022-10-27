@@ -1,12 +1,25 @@
 .productimage img{
     width:380px;
     height:300px;
+    border-radius: 8px;;
 }
 .productimage{
     height:450px;
-    width:300px;
+    width:380px;
+   border-radius: 8px;
+    border: 1px solid #95A0A7;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 15px;
 }
 .product-name{
     font-weight: 600;
     font-family: lato;
+}
+
+.activity-btn{
+    width: 100%;
+background-color: #E83330;
+padding-top: 15px;
+padding-bottom: 15px;
 }
