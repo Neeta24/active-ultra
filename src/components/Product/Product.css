@@ -3,6 +3,10 @@
     height:300px;
 }
 .productimage{
-    height:510px;
+    height:450px;
     width:300px;
+}
+.product-name{
+    font-weight: 600;
+    font-family: lato;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Product.css';
 const Product = (props) => {
-   const{img,name} = props.product;
+   const{img,name,Timerequired} = props.product;
     return (
         <div className='productimage'>
             <img src={img} alt=""/>
-           <p>{name}</p>
+           <p className='product-name'>{name}</p>
+           <p>Time required: {Timerequired}s</p>
         </div>
         
     );
