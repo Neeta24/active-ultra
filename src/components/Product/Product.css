@@ -22,4 +22,8 @@
 background-color: #E83330;
 padding-top: 15px;
 padding-bottom: 15px;
+color:white;
+}
+.activity-btn:hover{
+    background-color: rgb(120, 17, 17);
 }

@@ -9,12 +9,19 @@ const Activity = () => {
         .then(res =>res.json())
         .then(data => setProducts(data));
     },[])
+
+    const handleAddToList = () =>{
+        console.log('clicked');
+       }
+
     return (
         <div className='activity-container'>
             <div className="excersize-container">
                  {
                     products.map(product=><Product key ={product.id}
-                    product ={product}></Product>)
+                    product ={product}
+                    handleAddToList = {handleAddToList}>
+                    </Product>)
                  }
             </div>
             <div className="details-container">
