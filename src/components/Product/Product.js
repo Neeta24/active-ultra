@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import './Product.css';
 const Product = (props) => {
    const{img,name,Timerequired} = props.product;
@@ -11,7 +13,8 @@ const Product = (props) => {
            <p>Time required: {Timerequired}s</p>
 
            <button onClick={() => props.handleAddToList(props.product)} className='activity-btn'>
-            Add To List
+            <p>Add To List</p>
+            
            </button>
         </div>
         

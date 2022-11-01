@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Details from '../Details/Details';
 import Product from '../Product/Product';
 import './Activity.css';
 const Activity = () => {
     const[products,setProducts] =useState([]);
+    
+    const[details,setDetails] = useState([])
 
     useEffect(()=>{
         fetch('data.json')
@@ -10,8 +13,10 @@ const Activity = () => {
         .then(data => setProducts(data));
     },[])
 
-    const handleAddToList = () =>{
-        console.log('clicked');
+    const handleAddToList = (product) =>{
+        // console.log(product);
+        const newDetail = [...details,product]
+        setDetails(newDetail);
        }
 
     return (
@@ -25,7 +30,7 @@ const Activity = () => {
                  }
             </div>
             <div className="details-container">
-              <h1>details about me</h1>
+             <Details details = {details}></Details>
             </div>
         </div>
         
