@@ -10,7 +10,7 @@ const Details = (props) => {
     return (
         <div>
              <h1>details about me</h1>
-              <h2>Excersize Time : {total}</h2>
+              <h2>Excersize Time : {total}s</h2>
               
         </div>
     );
