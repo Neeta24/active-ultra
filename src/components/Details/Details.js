@@ -10,7 +10,8 @@ const Details = (props) => {
         total =  total + product.Timerequired;
       }
 
-      const [time,setTime] = useState(0);
+      const [time,setTime] = useState([]);
+      console.log(time)
      
       const handleButton =(x)=>{
           const breakTime = x.target.value;
@@ -26,11 +27,11 @@ const Details = (props) => {
              <h1>Exersize Details</h1>
               <h2>Excersize Time : {total}s</h2>
               {
-                btn.map((b,index)=><button onClick={()=>handleButton()}  value={b} key={index}>{b}</button>)
-             
+                btn.map((b,index)=><button onClick={(x)=>handleButton(x)}  value={b} key={index}>{b}</button>)
+                
                 
             }
-            <h2>Break Time : {}</h2>
+           <h2>Break Time : {time}</h2>
               
           
            
