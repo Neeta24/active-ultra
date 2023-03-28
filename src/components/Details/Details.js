@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Breaktime from '../Breaktime/Breaktime';
+import getStoredData from '../Utilities/fakedb';
 
 
 const Details = (props) => {
@@ -11,13 +12,20 @@ const Details = (props) => {
       }
 
       const [time,setTime] = useState([]);
-      console.log(time)
+      // console.log(time)
      
       const handleButton =(x)=>{
           const breakTime = x.target.value;
           setTime(breakTime);
           localStorage.setItem("time",breakTime)
       }
+
+     useEffect(()=>{
+      const getData = getStoredData();
+      // console.log(getData);
+      setTime(getData);
+      
+    },[])
 
 
       const btn =[10,20,30,40,50,90,60];
