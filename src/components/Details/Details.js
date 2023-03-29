@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Details.css'
 
 import getStoredData from '../Utilities/fakedb';
 
@@ -33,13 +34,14 @@ const Details = (props) => {
         <div>
          
              <h1>Exersize Details</h1>
-              <h2>Excersize Time : {total}s</h2>
+              
               {
-                btn.map((b,index)=><button onClick={(x)=>handleButton(x)}  value={b} key={index}>{b}</button>)
+                btn.map((b,index)=><button className='time-button' onClick={(x)=>handleButton(x)}  value={b} key={index}>{b}</button>)
                 
                 
             }
-           <h2>Break Time : {time}</h2>
+            <h2 className='exercize'>Excersize Time : {total}s</h2>
+           <h2 className='break'>Break Time : {time}</h2>
               
           
            

@@ -33,8 +33,8 @@ const Activity = () => {
             </div>
             <div className="details-container">
                 <div className='info'>
-                    
-                    <h5>My Name: John </h5>
+                    <img src="" alt="" />
+                    <h3> Name: John </h3>
                      <p>City:Stlouis </p>
                    
                     <p>Street:3448 Mandan Road</p>
