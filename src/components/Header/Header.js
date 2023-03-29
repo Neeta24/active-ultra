@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee,faNetworkWired } from '@fortawesome/free-solid-svg-icons';
+import { faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import './Header.css'
 
 const Header = () => {

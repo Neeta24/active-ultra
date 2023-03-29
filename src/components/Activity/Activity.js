@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressBook, faHouse } from '@fortawesome/free-solid-svg-icons'; 
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
 import Product from '../Product/Product';
@@ -30,6 +32,13 @@ const Activity = () => {
                  }
             </div>
             <div className="details-container">
+                <div className='info'>
+                    
+                    <h5>My Name: John </h5>
+                     <p>City:Stlouis </p>
+                   
+                    <p>Street:3448 Mandan Road</p>
+                </div>
              <Details details = {details}></Details>
             </div>
         </div>

@@ -7,3 +7,9 @@
    grid-template-columns: repeat(3,1fr);
    
 }
+.info p{
+    margin:0;
+}
+.info img{
+    border-radius: 50%;
+}
