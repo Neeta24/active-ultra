@@ -1,9 +1,9 @@
-.productimage img{
+.product img{
     width:380px;
     height:300px;
     border-radius: 8px;;
 }
-.productimage{
+.product{
     height:450px;
     width:380px;
    border-radius: 8px;
@@ -11,6 +11,7 @@
     margin-top: 20px;
     margin-left: 10px;
     padding: 15px;
+    position: relative;
 }
 .product-name{
     font-weight: 600;
@@ -20,9 +21,11 @@
 .activity-btn{
     width: 100%;
 background-color: #E83330;
-padding-top: 15px;
-padding-bottom: 15px;
 color:white;
+bottom: 0;
+border: none;
+border-radius: 8px;
+
 }
 .activity-btn:hover{
     background-color: rgb(120, 17, 17);
