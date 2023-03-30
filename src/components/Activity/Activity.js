@@ -41,6 +41,8 @@ const Activity = () => {
                 </div>
              <Details details = {details}></Details>
             </div>
+
+            
         </div>
         
     );
