@@ -24,3 +24,11 @@ color:#ffffff;
     color: #ffffff;
     border-radius: 10px;
 }
+.activity{
+    padding: 15px;
+    background-color: #E83330;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;  
+    border: none;
+}

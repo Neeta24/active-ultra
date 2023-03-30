@@ -42,7 +42,7 @@ const Details = (props) => {
             }
             <h2 className='exercize'>Excersize Time : {total}s</h2>
            <h2 className='break'>Break Time : {time}</h2>
-              
+              <button className='activity'>Activity Completed</button>
           
            
               
