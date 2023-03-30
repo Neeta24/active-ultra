@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Details.css'
+import './Details.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import getStoredData from '../Utilities/fakedb';
 
@@ -30,6 +32,12 @@ const Details = (props) => {
 
 
       const btn =[10,20,30,40,50,90,60];
+
+      const diffToast =()=>{
+        toast.success("Succesfully Done!",{
+          position:"top-center"
+        })
+      }
     return (
         <div>
          
@@ -42,9 +50,9 @@ const Details = (props) => {
             }
             <h2 className='exercize'>Excersize Time : {total}s</h2>
            <h2 className='break'>Break Time : {time}</h2>
-              <button className='activity'>Activity Completed</button>
+              <button className='activity' onClick={diffToast}>Activity Completed</button>
           
-           
+           <ToastContainer></ToastContainer>
               
         </div>
       
